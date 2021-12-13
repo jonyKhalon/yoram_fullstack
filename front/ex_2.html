@@ -8,28 +8,41 @@
     <link rel="stylesheet" href="ex_2.css" />
   </head>
   <body>
-    <div id="main">
-      <div id="form">
-        <div class="inner_field">
-          <h1>Register</h1>
-          <span>If not working go to</span>
-          <a href="https://www.youtube.com/">youtube </a>
-        </div>
-
-        <div class="div-inputs">
-          <label for="fname">First name:</label><br />
-          <input type="text" />
-
-          <label for="fname">Second name:</label><br />
-          <input type="text" />
-
-          <label for="Passwored">Passwored:</label><br />
-          <input input type="password" />
-        </div>
-        <div class="div-button">
-          <button>PLEASE CLICK ME</button>
-        </div>
+    <div class="container">
+      <div class="header">
+        <h2>Register</h2>
+        <span>Already have account?</span>
+        <a href="https://linktr.ee/Dhasdiel">Login</a>
       </div>
+
+      <form action="" class="form" id="form">
+        <div class="form-control">
+          <label for="">Username*</label>
+          <input type="text" id="username" />
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="">Email*</label>
+          <input type="email" id="email" />
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="">Password*</label>
+          <input type="password" id="password" />
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="">Repeat Password*</label>
+          <input type="password" id="rePassword" />
+          <small>Error message</small>
+        </div>
+
+        <button onclick="comparePass()">Submit</button>
+      </form>
     </div>
+    <script src="ex_2.js"></script>
   </body>
 </html>
