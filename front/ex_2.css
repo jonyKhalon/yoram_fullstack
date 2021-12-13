@@ -1,0 +1,50 @@
+#main {
+  border: 2px solid rgb(40, 218, 8);
+  min-height: 98vh;
+  min-width: 98vw;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#form {
+  border: 3px solid rgb(63, 221, 174);
+  min-height: 60vh;
+  min-width: 50vw;
+  border-radius: 7px;
+  box-shadow: 5px 5px 5px rgb(223, 26, 58);
+  padding-left: 4vw;
+  padding-top: 4vh;
+  margin: 20px;
+}
+
+.div-inputs {
+  margin-top: 1vh;
+}
+.div-inputs input {
+  display: block;
+  height: 3vh;
+  margin-bottom: 1vh;
+  border: 1px solid gold;
+  border-radius: 4px;
+  width: 25vw;
+}
+div button {
+  width: 15vw;
+  height: 2.5vh;
+  margin-left: 5vw;
+  background-color: gold;
+}
+
+h1 {
+  text-align: center;
+  display: inline;
+}
+
+span {
+  margin-left: 8vw;
+}
+
+a {
+  text-decoration: none;
+}
