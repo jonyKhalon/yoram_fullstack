@@ -1,1 +1,0 @@
-# yoram_fullstack
