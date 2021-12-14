@@ -1,0 +1,112 @@
+#header {
+  height: 60px;
+  width: 100%;
+  background-color: #6d0101;
+  padding-top: 30px;
+  display: flex;
+}
+
+#header input {
+  margin-left: 65%;
+  margin-bottom: auto;
+  padding-top: 2vh;
+  border-radius: 5px;
+}
+
+.header-link {
+  padding-left: 3vw;
+  padding-top: 0.2vh; /*needed for more control */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font: 1em sans-serif;
+}
+
+#main {
+  display: flex;
+  height: 90vh;
+  padding-top: 7vh;
+  /* background-color: red; */
+}
+
+.stage {
+  border: 1px solid black;
+  margin: 40px;
+  border-radius: 13px;
+  box-shadow: 5px 5px rgba(29, 26, 26, 0.383);
+  margin-bottom: 10vh;
+  
+}
+
+#left {
+  width: 20%;
+}
+
+#rigth {
+  width: 20%;
+}
+
+#middle {
+  width: 60%;
+  padding: 4vh;
+  /* border: 1px solid red; */
+  background-image: url("pyt.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#middle h1 {
+  text-align: center;
+  /* border: 1px solid red; */
+}
+
+#hello-containter {
+  display: flex;
+  margin-top: 14vh;
+  justify-content: center;
+}
+
+.hello {
+  height: 10vh;
+  width: 10vw;
+  margin: 15px;
+  border: 1px solid black;
+  padding: 1vh;
+  justify-content: center;
+  border-radius: 5px;
+  align-items: center;
+  /* margin: auto; */
+}
+
+#bottom {
+  display: flex;
+  margin-top: 7vh;
+  margin-bottom: 5vh;
+  height: 30%;
+  border: 1px solid black;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  padding: 10px;
+  justify-content: center;
+}
+
+.circle {
+  margin: auto;
+  width: 45px;
+  height: 45px;
+  border: 1px solid black;
+  border-radius: 100%;
+  background-color: grey;
+  
+}
+
+.hello p {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.bottom-txt p {
+    display: block;
+    padding: 20px;
+    padding-left: 30px;
+}
