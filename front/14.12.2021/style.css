@@ -1,112 +1,115 @@
-#header {
-  height: 60px;
-  width: 100%;
-  background-color: #6d0101;
-  padding-top: 30px;
-  display: flex;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+.htmlBody { font-family: 'Roboto', sans-serif; }
+.pageBody, .pageBodyCenterBody, .pageHeaderMenu, .pageBodyCenterFooter { 
+    display: flex; 
+    flex-wrap: wrap; 
+    text-align: center; 
+    gap: 2%;
+}
+.pageBody { padding-left: 1.5%; padding-right: 1.5%; padding-bottom: 20px; }
+.pageHeader { padding-bottom: 60px; }
+.pageHeaderMenuLink { flex: 5%; }
+.pageHeaderMenuSpace { flex: 67%; }
+.pageHeaderMenuSearch { flex: 10%; }
+.pageHeaderMenuLink a {
+    
+}
+.pageHeaderMenu { 
+    background-color: rgba(94, 13, 13, 1); 
+    line-height: 60px;
+    box-shadow: 0px 5px 5px rgba(0,0,0,.2);
 }
 
-#header input {
-  margin-left: 65%;
-  margin-bottom: auto;
-  padding-top: 2vh;
-  border-radius: 5px;
+.pageBodyLeft, .pageBodyRight { flex: 18%; }
+.pageBodyCenter { 
+    flex: 51%; 
+    background-image: url("https://media-cdn.tripadvisor.com/media/photo-s/1c/3e/ea/b5/open-water-fun.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 4%;
 }
 
-.header-link {
-  padding-left: 3vw;
-  padding-top: 0.2vh; /*needed for more control */
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font: 1em sans-serif;
+.pageBodyLeft, .pageBodyRight, .pageBodyCenter{
+    border: 1px solid rgba(0,0,0,.7);
+    border-radius: 6px;
 }
 
-#main {
-  display: flex;
-  height: 90vh;
-  padding-top: 7vh;
-  /* background-color: red; */
+.pageBodyCenterBodyCard { flex: 20%; }
+.cardFace { 
+    border-radius: 100%; 
+    background-color: rgba(0, 0, 0, .4); 
+    width: 60px; 
+    height: 60px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+.cardContent {
+    overflow-wrap: anywhere;
+    padding: 10px;
 }
 
-.stage {
-  border: 1px solid black;
-  margin: 40px;
-  border-radius: 13px;
-  box-shadow: 5px 5px rgba(29, 26, 26, 0.383);
-  margin-bottom: 10vh;
-  
+.pageBodyCenterFooter { 
+    padding: 10px 40px 30px 40px;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,.7);
+    border-radius: 6px;
+    width: 72%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pageBodyCenterHeader { padding-bottom: 50px; }
+.pageBodyCenterBody { 
+    padding-left: 10%;
+    padding-right: 10%; 
+    padding-bottom: 100px;
+}
+.card {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,.7);
+    border-radius: 4px;
+}
+.cardText { padding-top: 60px; }
+.searchField{
+    position:  relative;
+}
+.searchField::before {
+    background-image: url(https://icons.veryicon.com/png/o/application/minimalist-icon/search-532.png);
+    width: 12px;
+    background-position: center center;
+    background-size: contain;
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 12px;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.searchInput { 
+    border-radius: 4px; 
+    border: 1px solid rgba(0, 0, 0, .7); 
+    width: 80%; 
+    padding-left: 15px;
 }
 
-#left {
-  width: 20%;
+.a1 { 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px; 
+    color: green;
+}
+.a2 {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px; 
+    color: red;
+}
+.a3 {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px; 
+    color: yellow;
 }
 
-#rigth {
-  width: 20%;
-}
-
-#middle {
-  width: 60%;
-  padding: 4vh;
-  /* border: 1px solid red; */
-  background-image: url("pyt.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-#middle h1 {
-  text-align: center;
-  /* border: 1px solid red; */
-}
-
-#hello-containter {
-  display: flex;
-  margin-top: 14vh;
-  justify-content: center;
-}
-
-.hello {
-  height: 10vh;
-  width: 10vw;
-  margin: 15px;
-  border: 1px solid black;
-  padding: 1vh;
-  justify-content: center;
-  border-radius: 5px;
-  align-items: center;
-  /* margin: auto; */
-}
-
-#bottom {
-  display: flex;
-  margin-top: 7vh;
-  margin-bottom: 5vh;
-  height: 30%;
-  border: 1px solid black;
-  margin-left: 1vw;
-  margin-right: 1vw;
-  padding: 10px;
-  justify-content: center;
-}
-
-.circle {
-  margin: auto;
-  width: 45px;
-  height: 45px;
-  border: 1px solid black;
-  border-radius: 100%;
-  background-color: grey;
-  
-}
-
-.hello p {
-  padding-top: 20px;
-  text-align: center;
-}
-
-.bottom-txt p {
-    display: block;
-    padding: 20px;
-    padding-left: 30px;
-}
